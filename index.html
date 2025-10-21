@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGNES' Library - Kakoba, Mbarara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Using a placeholder for logo -->
+                <div style="width: 50px; height: 50px; background-color: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-color); font-weight: bold;">AL</div>
+                <h1>AGNES' Library</h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+    <ul id="mainNav">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <!-- Change this link to point to registration section -->
+        <li><a href="#registration">Register</a></li>
+    </ul>
+</nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <h2>Welcome to AGNES' Library</h2>
+        <p>A community hub for knowledge, learning, and connection in Kakoba, Mbarara, Western Uganda</p>
+        <!-- Change this link to point to registration section -->
+        <a href="#registration" class="btn">Become a Member</a>
+    </div>
+</section>
+    <!-- Main Content -->
+    <main class="container">
+        <!-- About Us Section -->
+        <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="AGNES' Library interior">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>AGNES' Library was established in 2010 with the mission to provide accessible knowledge resources to the community of Kakoba, Mbarara and surrounding areas. Named after Agnes Nakiwala, a passionate educator who dedicated her life to literacy, our library continues her legacy.</p>
+                    <p>We believe that access to information and knowledge is a fundamental right that empowers individuals and transforms communities. Our library serves as a hub for learning, creativity, and community engagement.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading community library in Western Uganda, fostering a culture of reading, lifelong learning, and intellectual curiosity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Book lending">
+                    <div class="service-card-content">
+                        <h3>Book Lending</h3>
+                        <p>Borrow from our extensive collection of fiction, non-fiction, academic texts, and children's books.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Reading spaces">
+                    <div class="service-card-content">
+                        <h3>Reading Spaces</h3>
+                        <p>Comfortable and quiet reading areas for individuals and study groups.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="E-library">
+                    <div class="service-card-content">
+                        <h3>E-Library</h3>
+                        <p>Access to digital resources, online databases, and computer workstations.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Community programs">
+                    <div class="service-card-content">
+                        <h3>Community Programs</h3>
+                        <p>Book clubs, reading sessions, literacy programs, and educational workshops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Library interior">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Books collection">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Reading area">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Community event">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Computer area">
+                </div>
+                <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Library shelves">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address</strong><br>
+                                Kakoba Road, Mbarara<br>
+                                Western Uganda
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong><br>
+                                +256 712 345 678
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong><br>
+                                info@agneslibrary.org
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Opening Hours</strong><br>
+                                Mon-Fri: 8:00 AM - 7:00 PM<br>
+                                Sat: 9:00 AM - 5:00 PM<br>
+                                Sun: 1:00 PM - 5:00 PM
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <!-- Contact Form -->
+<div class="contact-form">
+    <h3>Send Us a Message</h3>
+    <form action="submit_contact.php" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</div>
+        </section>
+
+        <!-- Registration Form -->
+         <section id="registration"">
+<div class="registration-form">
+    <h3>Registration Form</h3>
+    <form action="submit_registration.php" method="POST">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="first_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="last_name" class="form-control" required>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="regEmail">Email Address</label>
+            <input type="email" id="regEmail" name="email" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="membershipType">Membership Type</label>
+            <select id="membershipType" name="membership_type" class="form-control" required>
+                <option value="">Select Membership Type</option>
+                <option value="student">Student - UGX 5,000/year</option>
+                <option value="individual">Individual - UGX 10,000/year</option>
+                <option value="family">Family - UGX 25,000/year</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" name="payment_method" class="form-control" required>
+                <option value="">Select Payment Method</option>
+                <option value="mobile_money">Mobile Money</option>
+                <option value="bank_transfer">Bank Transfer</option>
+                <option value="cash">Cash (at library)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                <input type="checkbox" name="terms" required>
+                I agree to the Terms and Conditions
+            </label>
+        </div>
+        
+        <button type="submit" class="btn">Complete Registration</button>
+    </form>
+</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AGNES' Library</h3>
+                    <p>Providing knowledge resources and community programs in Kakoba, Mbarara since 2010.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Book Lending</a></li>
+                        <li><a href="#services">Reading Spaces</a></li>
+                        <li><a href="#services">E-Library</a></li>
+                        <li><a href="#services">Community Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Kakoba Road, Mbarara</li>
+                        <li>Western Uganda</li>
+                        <li>+256 712 345 678</li>
+                        <li>info@agneslibrary.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 AGNES' Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged view">
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('show');
+        });
+
+//         // Contact Form Validation
+// document.getElementById('contactForm').addEventListener('submit', function(e) {
+//     // Let the form submit naturally to PHP
+//     // Basic validation happens on the PHP side
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const message = document.getElementById('message').value;
+    
+//     if (!name || !email || !message) {
+//         e.preventDefault();
+//         alert('Please fill in all fields.');
+//     }
+// });
+
+// // Registration Form Functionality
+// const membershipType = document.getElementById('membershipType');
+// const priceDisplay = document.getElementById('priceDisplay');
+// const selectedPrice = document.getElementById('selectedPrice');
+
+// membershipType.addEventListener('change', function() {
+//     const selectedOption = this.options[this.selectedIndex];
+//     const price = selectedOption.getAttribute('data-price');
+    
+//     if (price) {
+//         selectedPrice.textContent = `UGX ${parseInt(price).toLocaleString()}`;
+//         priceDisplay.classList.add('show');
+//     } else {
+//         priceDisplay.classList.remove('show');
+//     }
+// });
+
+// document.getElementById('registrationForm').addEventListener('submit', function(e) {
+//     const firstName = document.getElementById('firstName').value;
+//     const lastName = document.getElementById('lastName').value;
+//     const email = document.getElementById('regEmail').value;
+//     const phone = document.getElementById('phone').value;
+//     const address = document.getElementById('address').value;
+//     const membershipType = document.getElementById('membershipType').value;
+//     const paymentMethod = document.getElementById('paymentMethod').value;
+//     const terms = document.getElementById('terms').checked;
+    
+//     if (!firstName || !lastName || !email || !phone || !address || !membershipType || !paymentMethod || !terms) {
+//         e.preventDefault();
+//         alert('Please fill in all fields and agree to the terms and conditions.');
+//     }
+// });
+
+        // Image Modal
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('imageModal');
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active nav link
+                    document.querySelectorAll('nav a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mainNav').classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
